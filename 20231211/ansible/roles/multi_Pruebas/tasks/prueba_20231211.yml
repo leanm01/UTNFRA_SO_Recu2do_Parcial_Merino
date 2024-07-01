@@ -1,0 +1,32 @@
+---
+
+- name: "Crear estructura de directorios"
+  become: true
+  ansible.builtin.file:
+    path: "{{ item }}"
+    state: directory
+    mode: '0755'
+  with_items: 
+    - /tmp/Recu2doParcial_20231211
+    - /tmp/Recu2doParcial_20231211/Alumno
+    - /tmp/Recu2doParcial_20231211/PC
+
+- name: "Agrego un archivo desde template"
+  become: true
+  template:
+    src: template_01.j2
+    dest: /tmp/Recu2doParcial_20231211/Alumno/datos.txt
+
+- name: "Crear grupo"
+  become: true
+  ansible.builtin.group:
+    name: grupo_recu2
+    state: present
+
+- name: "Agregar un nuevo usuario"
+  become: true
+  ansible.builtin.user:
+    name: user_recu2
+    create_home: yes 
+    group: grupo_recu2
+    state: present

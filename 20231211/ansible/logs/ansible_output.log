@@ -1,0 +1,92 @@
+2024-07-01 22:34:31,688 p=6266 u=merino n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-01 22:34:34,135 p=6266 u=merino n=ansible | PLAY [all] ************************************************************************************************************************************************************************************************
+2024-07-01 22:34:34,144 p=6266 u=merino n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************
+2024-07-01 22:34:35,162 p=6266 u=merino n=ansible | ok: [localhost]
+2024-07-01 22:34:35,170 p=6266 u=merino n=ansible | ok: [127.0.0.1]
+2024-07-01 22:34:35,186 p=6266 u=merino n=ansible | TASK [include_role : multi_Pruebas] ***********************************************************************************************************************************************************************
+2024-07-01 22:34:35,241 p=6266 u=merino n=ansible | TASK [multi_Pruebas : debug] ******************************************************************************************************************************************************************************
+2024-07-01 22:34:35,253 p=6266 u=merino n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-07-01 22:34:35,256 p=6266 u=merino n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-07-01 22:34:35,265 p=6266 u=merino n=ansible | TASK [multi_Pruebas : debug] ******************************************************************************************************************************************************************************
+2024-07-01 22:34:35,303 p=6266 u=merino n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 20231211"
+}
+2024-07-01 22:34:35,303 p=6266 u=merino n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 20231211"
+}
+2024-07-01 22:34:35,311 p=6266 u=merino n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ***************************************************************************************************************************************************
+2024-07-01 22:34:35,363 p=6266 u=merino n=ansible | included: /home/merino/UTN-FRA_SO_Examenes/20231211/ansible/roles/multi_Pruebas/tasks/prueba_20231211.yml for 127.0.0.1, localhost
+2024-07-01 22:34:35,372 p=6266 u=merino n=ansible | TASK [multi_Pruebas : Crear estructura de directorios] ****************************************************************************************************************************************************
+2024-07-01 22:34:35,638 p=6266 u=merino n=ansible | changed: [localhost] => (item=/tmp/Recu2doParcial_20231211)
+2024-07-01 22:34:35,672 p=6266 u=merino n=ansible | ok: [127.0.0.1] => (item=/tmp/Recu2doParcial_20231211)
+2024-07-01 22:34:35,766 p=6266 u=merino n=ansible | changed: [localhost] => (item=/tmp/Recu2doParcial_20231211/Alumno)
+2024-07-01 22:34:35,848 p=6266 u=merino n=ansible | ok: [127.0.0.1] => (item=/tmp/Recu2doParcial_20231211/Alumno)
+2024-07-01 22:34:35,891 p=6266 u=merino n=ansible | changed: [localhost] => (item=/tmp/Recu2doParcial_20231211/PC)
+2024-07-01 22:34:36,019 p=6266 u=merino n=ansible | ok: [127.0.0.1] => (item=/tmp/Recu2doParcial_20231211/PC)
+2024-07-01 22:34:36,028 p=6266 u=merino n=ansible | TASK [multi_Pruebas : Agrego un archivo desde template] ***************************************************************************************************************************************************
+2024-07-01 22:34:36,520 p=6266 u=merino n=ansible | ok: [localhost]
+2024-07-01 22:34:36,525 p=6266 u=merino n=ansible | changed: [127.0.0.1]
+2024-07-01 22:34:36,534 p=6266 u=merino n=ansible | TASK [Otra tarea] *****************************************************************************************************************************************************************************************
+2024-07-01 22:34:36,545 p=6266 u=merino n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-01 22:34:36,549 p=6266 u=merino n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-01 22:34:36,565 p=6266 u=merino n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************
+2024-07-01 22:34:36,565 p=6266 u=merino n=ansible | 127.0.0.1                  : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-01 22:34:36,566 p=6266 u=merino n=ansible | localhost                  : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-01 22:37:37,952 p=6987 u=merino n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-07-01 22:37:38,595 p=6987 u=merino n=ansible | PLAY [all] ************************************************************************************************************************************************************************************************
+2024-07-01 22:37:38,603 p=6987 u=merino n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************************
+2024-07-01 22:37:39,333 p=6987 u=merino n=ansible | ok: [localhost]
+2024-07-01 22:37:39,729 p=6987 u=merino n=ansible | ok: [127.0.0.1]
+2024-07-01 22:37:39,747 p=6987 u=merino n=ansible | TASK [include_role : multi_Pruebas] ***********************************************************************************************************************************************************************
+2024-07-01 22:37:39,790 p=6987 u=merino n=ansible | TASK [multi_Pruebas : debug] ******************************************************************************************************************************************************************************
+2024-07-01 22:37:39,804 p=6987 u=merino n=ansible | ok: [127.0.0.1] => {
+    "msg": "Dentro del rol"
+}
+2024-07-01 22:37:39,807 p=6987 u=merino n=ansible | ok: [localhost] => {
+    "msg": "Dentro del rol"
+}
+2024-07-01 22:37:39,815 p=6987 u=merino n=ansible | TASK [multi_Pruebas : debug] ******************************************************************************************************************************************************************************
+2024-07-01 22:37:39,831 p=6987 u=merino n=ansible | ok: [127.0.0.1] => {
+    "msg": "archivo a incluir Nro: 20231211"
+}
+2024-07-01 22:37:39,842 p=6987 u=merino n=ansible | ok: [localhost] => {
+    "msg": "archivo a incluir Nro: 20231211"
+}
+2024-07-01 22:37:39,851 p=6987 u=merino n=ansible | TASK [multi_Pruebas : Incluyo archivo prueba_NroPrueba] ***************************************************************************************************************************************************
+2024-07-01 22:37:39,898 p=6987 u=merino n=ansible | included: /home/merino/UTN-FRA_SO_Examenes/20231211/ansible/roles/multi_Pruebas/tasks/prueba_20231211.yml for 127.0.0.1, localhost
+2024-07-01 22:37:39,908 p=6987 u=merino n=ansible | TASK [multi_Pruebas : Crear estructura de directorios] ****************************************************************************************************************************************************
+2024-07-01 22:37:40,166 p=6987 u=merino n=ansible | ok: [localhost] => (item=/tmp/Recu2doParcial_20231211)
+2024-07-01 22:37:40,184 p=6987 u=merino n=ansible | ok: [127.0.0.1] => (item=/tmp/Recu2doParcial_20231211)
+2024-07-01 22:37:40,302 p=6987 u=merino n=ansible | ok: [localhost] => (item=/tmp/Recu2doParcial_20231211/Alumno)
+2024-07-01 22:37:40,365 p=6987 u=merino n=ansible | ok: [127.0.0.1] => (item=/tmp/Recu2doParcial_20231211/Alumno)
+2024-07-01 22:37:40,447 p=6987 u=merino n=ansible | ok: [localhost] => (item=/tmp/Recu2doParcial_20231211/PC)
+2024-07-01 22:37:40,530 p=6987 u=merino n=ansible | ok: [127.0.0.1] => (item=/tmp/Recu2doParcial_20231211/PC)
+2024-07-01 22:37:40,539 p=6987 u=merino n=ansible | TASK [multi_Pruebas : Agrego un archivo desde template] ***************************************************************************************************************************************************
+2024-07-01 22:37:41,049 p=6987 u=merino n=ansible | ok: [localhost]
+2024-07-01 22:37:41,074 p=6987 u=merino n=ansible | ok: [127.0.0.1]
+2024-07-01 22:37:41,082 p=6987 u=merino n=ansible | TASK [multi_Pruebas : Crear grupo] ************************************************************************************************************************************************************************
+2024-07-01 22:37:41,345 p=6987 u=merino n=ansible | changed: [localhost]
+2024-07-01 22:37:41,362 p=6987 u=merino n=ansible | ok: [127.0.0.1]
+2024-07-01 22:37:41,371 p=6987 u=merino n=ansible | TASK [multi_Pruebas : Agregar un nuevo usuario] ***********************************************************************************************************************************************************
+2024-07-01 22:37:41,703 p=6987 u=merino n=ansible | changed: [localhost]
+2024-07-01 22:37:41,737 p=6987 u=merino n=ansible | changed: [127.0.0.1]
+2024-07-01 22:37:41,745 p=6987 u=merino n=ansible | TASK [Otra tarea] *****************************************************************************************************************************************************************************************
+2024-07-01 22:37:41,758 p=6987 u=merino n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-01 22:37:41,761 p=6987 u=merino n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-07-01 22:37:41,777 p=6987 u=merino n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************************
+2024-07-01 22:37:41,777 p=6987 u=merino n=ansible | 127.0.0.1                  : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-07-01 22:37:41,778 p=6987 u=merino n=ansible | localhost                  : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

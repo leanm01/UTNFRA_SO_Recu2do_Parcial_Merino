@@ -1,0 +1,3 @@
+cpu cores	: 2
+cpu MHz		: 3393.624
+cpu MHz		: 3393.624
